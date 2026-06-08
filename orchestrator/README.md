@@ -1,5 +1,11 @@
 # Devin Orchestrator: Autonomous Remediation Automation
 
+## IP Protection Notice
+
+This code is provided for interview evaluation purposes only. Unauthorized reproduction or commercial use is prohibited.
+
+---
+
 Event-driven automation using Devin API to autonomously remediate security vulnerabilities in Apache Superset.
 
 ## Overview
@@ -101,10 +107,6 @@ Auto-refreshes every 5 seconds showing real-time status.
 - `.env.example` — Credential template
 - `APPROACH.md` — Strategy & differentiation
 - `DECISIONS.md` — Implementation decisions
-
-## IP Protection Notice
-
-This code is provided for interview evaluation purposes only. Unauthorized reproduction or commercial use is prohibited.
 
 ## How It Works
 
