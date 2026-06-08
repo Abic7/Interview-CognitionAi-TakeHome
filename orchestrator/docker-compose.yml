@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  orchestrator:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DEVIN_API_KEY=${DEVIN_API_KEY}
+      - DEVIN_ORG_ID=${DEVIN_ORG_ID}
+      - GITHUB_TOKEN=${GITHUB_TOKEN}
+      - GITHUB_FORK_OWNER=${GITHUB_FORK_OWNER}
+      - GITHUB_FORK_REPO=${GITHUB_FORK_REPO}
+    volumes:
+      - orchestrator_data:/app/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+
+volumes:
+  orchestrator_data:
