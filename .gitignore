@@ -141,3 +141,25 @@ PROJECT.md
 oxc-custom-build/
 *.code-workspace
 *.duckdb
+
+# Orchestrator-specific
+orchestrator/.env
+orchestrator/orchestrator.db
+orchestrator/__pycache__/
+orchestrator/*.pyc
+orchestrator/.venv/
+orchestrator/venv/
+
+# Video recordings and media
+*.mp4
+*.mov
+*.webm
+
+# Only commit these orchestrator files:
+# - orchestrator/main.py
+# - orchestrator/requirements.txt
+# - orchestrator/.env.example
+# - orchestrator/dashboard.html
+# - orchestrator/APPROACH.md
+# - orchestrator/DECISIONS.md
+# - orchestrator/LOOM_VIDEO_GUIDE*.md
